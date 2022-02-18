@@ -5,6 +5,8 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import MovieDetail from './components/MovieDetail/MovieDetail';
 import PageNotFound from './components/PageNotFound/PageNotFound';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
@@ -13,8 +15,8 @@ function App() {
         <Header />
         <div className='container'>
           <Switch>
-            <Route path='/' component={Home} />
-            <Route path='/movie/+imdbID' component={MovieDetail} />
+            <Route path='/' exact component={Home} />
+            <Route path='/movie/:imdbID' component={MovieDetail} />
             <Route component={PageNotFound} />
           </Switch>
         </div>

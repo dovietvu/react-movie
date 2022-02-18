@@ -8,4 +8,8 @@
     justify-content: center;
     color: $font-primary;
     flex-direction: column;
+
+    .email, .phone {
+        font-size: 13px;
+    }
 }
