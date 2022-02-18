@@ -11,7 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Header />
         <div className='container'>
           <Switch>
