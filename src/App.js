@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.scss';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
@@ -11,7 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 function App() {
   return (
     <div className="App">
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <Header />
         <div className='container'>
           <Switch>
