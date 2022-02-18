@@ -7,8 +7,8 @@ import { fetchAsyncMovies, fetchAsyncShows } from '../../features/movies/moviesS
 const Home = () => {
   const dispatch = useDispatch()
   useEffect(() => {
-    dispatch(fetchAsyncMovies())
-    dispatch(fetchAsyncShows())
+    dispatch(fetchAsyncMovies('Harry'))
+    dispatch(fetchAsyncShows('Friend'))
   }, [])
   return (
     <div className='banner-img'>
